@@ -1,12 +1,9 @@
 import mysql from "mysql2"; // import library of mysql tools
+//import { password,username  } from "./secrets.js";
+import {dbConnections} from "./secrets.js";
 
-const db = mysql.createConnection({ // connect and call connection "db"
-    host: "127.0.0.1",
-    database: "bocacode",
-    user: "root",
-    password: "test1234"
 
-})
+const db = mysql.createConnection(dbConnections);
 
 console.log("We are connected")
 
@@ -20,4 +17,4 @@ db.query("SELECT * FROM users ", (err,results)=>{
     
     console.table(results);
 });
-console.log("The End");
+db.end();
