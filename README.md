@@ -2,7 +2,7 @@
 <!-- A - creates a bullet list -->
 <!-- Anything that is in [brackets] is clickable  -->
 <!-- to put a screenshot use ![Screen shot] -->
-![Screen shot](../mysql-js/images/readme.webp)
+![Screen shot](./images/readme.webp)
 # MySQL with JavaScript
 Week 2 Day 2 Connecting MySQL with JavaScript using Node.
 
